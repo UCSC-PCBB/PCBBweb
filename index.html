@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+     File: index.html
+     desc: Home Page. About the project?.
+-->
+<html>
+<!-- TODO: create a team logo and be epic-->
+<head>
+     <title>PCBB - Home</title>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="stylesheet" href="assets/css/main.css" />
+     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+     <link rel="icon" href="photos/logo.jpg">
+</head>
+<style>
+     /*this code is there to hide navbar on the top, to make sure custom navbar is the only thing seen properly */
+
+     #header nav {
+          display: none!important;
+     }
+</style>
+<style type="text/css">
+     /*this code is there to hide the midpage logo unless on mobile-done cause it looks nicer*/
+
+     .mobileShow {
+          display: none;
+     }
+     /* Smartphone Portrait and Landscape */
+
+     @media only screen and (min-width: 320px) and (max-width: 736px) {
+          .mobileShow {
+               display: inline;
+          }
+     }
+</style>
+
+<body class="landing">
+     <div id="page-wrapper">
+
+          <!-- Header -->
+          <header id="header">
+               <!-- TOP LEFT HAND CORNER TEXT h1 id="logo"><a href="index.html">Landed</a></h1-->
+               <!-- commenting out just for now to test alternate navbar style<nav id="nav"> -->
+               <div class="navigation-bar">
+                    <!-- changed navbar to navigation-bar class, so dont use "nav" anymore if you want this particular layout.
+					the specific CSS code for this is found in main.css around 3370 or so -->
+                    <nav id="nav">
+                         <!--this navbar is there NOT for actual navigation but to help display
+	      navigation in mobile ONLY. Will keep this until a workaround is discovered -->
+
+                         <!--MOBILE MENU-->
+                         <ul>
+                              <li>
+                                   <h1 id="logo"><a href="index.html">Home</a></h1></li>
+                                   <li><a href="aboutus.html"><b>About Us</b></a></li>
+                                   <li><a href="asdljkdas.html">Mission</a></li>
+
+                              <!-- <li><a href="sponsors.html">Sponsors</a></li>
+                              <li><a href="Contacts.html">Contact Us</a></li>  -->
+                         </ul>
+                    </nav>
+                    <!--end pseudo navbar for mobile ^^ -->
+                    <!--REAL Navbar that has logo and is centered starts here -->
+                    <div id="navigation-container">
+                         <ul>
+                              <li><a href="index.html"><b>Home</b></a></li>
+                              <li><a href="aboutus.html"><b>About Us</b></a></li>
+                              <!-- <li><a href="mission.html"><b>Mission</b></a></li>
+                              <li><a href="team.html"><b>Team</b></a></li>
+                              <li><a href="documents.html"><b>Documentation</b></a></li> -->
+
+                              <!-- <li>
+                                   <a href="index.html"><img src="add your logo here" alt="logo" width="15%" height="15%" style="vertical-align: middle; padding-top: 1em" /></a>
+                              </li> -->
+
+                              <!-- <li><a href="outreach.html"><b>Outreach</b></a></li>
+                              <li><a href="sponsors.html"><b>Sponsors</b></a></li>
+                              <li><a href="Contacts.html"><b>Contact Us</b></a></li> -->
+
+                         </ul>
+                    </div>
+               </div>
+               <!-- commenting out for now </nav> -->
+          </header>
+
+          <!-- Banner -->
+          <section id="banner">
+               <div class="content">
+                    <header>
+
+                         <!-- <div class="mobileShow">
+                              <span class="image"><img src="graphics/RTCircle_v5.png" alt="logo" /></span>
+                         </div> -->
+
+                         <h2>UCSC PCBB TEAM</h2>
+                         <p><b>Fighting for Plastic Free Seas</b></p>
+
+                    </header>
+               </div>
+          </section>
+     </div>
+
+     <!-- Scripts -->
+     <script src="assets/js/jquery.min.js"></script>
+     <script src="assets/js/jquery.scrolly.min.js"></script>
+     <script src="assets/js/jquery.dropotron.min.js"></script>
+     <script src="assets/js/jquery.scrollex.min.js"></script>
+     <script src="assets/js/skel.min.js"></script>
+     <script src="assets/js/util.js"></script>
+     <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
